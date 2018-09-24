@@ -9,6 +9,8 @@
             "email": "mateusfccp@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
 	"php": ">=7.0.31"
     },
