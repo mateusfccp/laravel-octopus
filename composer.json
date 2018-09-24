@@ -1,0 +1,21 @@
+{
+    "name": "unaspbr/laravel-octopus",
+    "description": "Wrapper do Octopus para ser usado no Laravel",
+    "type": "library",
+    "license": "GPL v3",
+    "authors": [
+        {
+            "name": "Mateus Felipe C. C. Pinto",
+            "email": "mateusfccp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	"php": ">=7.0.31"
+    },
+    "autoload": {
+	"psr-4": {
+	    "Octopus\\": "src/"
+	}
+    }
+}
