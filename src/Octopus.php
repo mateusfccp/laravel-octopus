@@ -1,6 +1,6 @@
 <?php
 
-namespace Octopus;
+namespace unaspbr;
 
 use Config;
 

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Octopus\Facade;
+namespace unaspbr\Facade;
 
 use Illuminate\Support\Facades\Facade;
  
