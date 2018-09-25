@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package Octopus
- * @version 1.0.3
+ * @version 1.0.4
  */
 class OctopusServiceProvider extends ServiceProvider
 {
@@ -24,17 +24,5 @@ class OctopusServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/octopus.php' => config_path('octopus.php'),
         ]);
-    }
-
-    /**
-     * Register the application services.
-     *
-     * @return  void
-     */
-    public function register()
-    {
-        $this->app->singleton(Octopus::class, function($app) {
-            return Octopus::class;
-        });
     }
 }

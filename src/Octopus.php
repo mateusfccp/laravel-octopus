@@ -9,7 +9,7 @@ use Config;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package Octopus
- * @version 1.0.3
+ * @version 1.0.4
  */
 class Octopus {
     /**

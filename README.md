@@ -36,10 +36,10 @@ Após a instalação, você deverá adicionar o ServiceProvider do Octopus à `a
 unaspbr\OctopusServiceProvider::class,
 ```
 
-Para usar o _wrapper_ como Facade, adicione o seguinte à `array` **aliases**, no mesmo arquivo:
+Caso você queira expor o _wrapper_ para que não precise importar o namespace, adicione o seguinte valor à `array` **aliases**:
 
 ```php
-'Octopus' => unaspbr\Octopus\Facade\Octopus::class,
+'Octopus' => unaspbr\Octopus::class,
 ```
 
 Por fim, para publicar o arquivo de configuração do Octopus, execute o comando:
@@ -59,7 +59,7 @@ O _wrapper_ possui duas funções, `queue` e `send`, equivalentes aos _endpoints
 ```php
 <?php
 
-use Octopus;
+use unaspbr\Octopus;
 
 $result = Octopus::queue('nome_da_action', [
 	'param1' => 'valor',
@@ -74,7 +74,7 @@ var_dump($result);
 ```php
 <?php
 
-use Octopus;
+use unaspbr\Octopus;
 
 $result = Octopus::send([
 	[
