@@ -9,7 +9,7 @@ O Octopus Laravel Wrapper é um componente que integra o Octopus no framework La
 
 ### Versão
 
-1.0.3
+1.0.4
 
 ### Compatibility
 
