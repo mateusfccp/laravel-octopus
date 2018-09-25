@@ -11,7 +11,7 @@ use Illuminate\Support\ServiceProvider;
  * @package Octopus
  * @version 0.1.0
  */
-class PlivoServiceProvider extends ServiceProvider
+class OctopusServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -33,14 +33,8 @@ class PlivoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if (method_exists(\Illuminate\Foundation\Application::class, 'singleton')) {
-            $this->app->singleton('octopus', function($app) {
-                return new Octopus;
-            });
-        } else {
-            $this->app['octopus'] = $this->app->share(function($app) {
-                return new Octopus;
-            });
-        }
+        $this->app->singleton(Octopus::class, function($app) {
+            return Octopus::class;
+        });
     }
 }
