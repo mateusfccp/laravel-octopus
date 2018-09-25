@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package Octopus
- * @version 0.1.0
+ * @version 1.0.3
  */
 class OctopusServiceProvider extends ServiceProvider
 {
